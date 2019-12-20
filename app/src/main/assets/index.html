@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function jsFunction2(hello){
+            document.getElementById("msg").innerHTML = hello;
+        }
+    </script>
+</head>
+<body>
+
+<p id="msg">我是一个段落</p>
+
+<p >我是android传过来的</p>
+
+<button onclick="window.myJavascriptInterface.getData()">无参调用android方法</button>
+<button onclick="window.myJavascriptInterface.getData('有参：从js传递给android')">有参：从js传递给android</button>
+</body>
+</html>
